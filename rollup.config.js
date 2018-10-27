@@ -1,12 +1,22 @@
 import buble from "rollup-plugin-buble";
 import { uglify } from "rollup-plugin-uglify";
 
-export default {
-  input: "src/emi.js",
-  output: {
-    name: "emi",
-    file: "dist/emi.js",
-    format: "umd"
+export default [
+  {
+    input: "src/emi.js",
+    output: {
+      file: "dist/emi.js",
+      format: "cjs"
+    },
+    plugins: [buble()]
   },
-  plugins: [buble(), uglify()]
-};
+  {
+    input: "src/emi.js",
+    output: {
+      name: "emi",
+      file: "dist/emi-umd.js",
+      format: "umd"
+    },
+    plugins: [buble(), uglify()]
+  }
+];
