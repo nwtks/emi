@@ -4,9 +4,10 @@
   "description": "simple emitter.",
   "author": "nwtks",
   "license": "MIT",
+  "main": "src/emi.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nwtks/emi.git"
+    "url": "https://github.com/nwtks/emi"
   },
   "devDependencies": {
     "rollup": "^0.66.0",
