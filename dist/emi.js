@@ -8,7 +8,7 @@ function emi() {
         listeners[e] = [];
       }
       listeners[e].push(f);
-      return emitter;
+      return emitter
     },
     off: function off(e, f) {
       if (listeners[e]) {
@@ -21,16 +21,16 @@ function emi() {
           }
         }
       }
-      return emitter;
+      return emitter
     },
     emit: function emit(e, a) {
       if (listeners[e]) {
         listeners[e].forEach(function (f) { return f(a); });
       }
-      return emitter;
+      return emitter
     }
   };
-  return emitter;
+  return emitter
 }
 
 module.exports = emi;
