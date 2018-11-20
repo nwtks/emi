@@ -3,18 +3,18 @@ import { uglify } from 'rollup-plugin-uglify'
 
 export default [
   {
-    input: 'src/emi.js',
+    input: 'src/temi.js',
     output: {
-      file: 'dist/emi.js',
+      file: 'dist/temi.js',
       format: 'cjs'
     },
     plugins: [buble()]
   },
   {
-    input: 'src/emi.js',
+    input: 'src/temi.js',
     output: {
-      name: 'emi',
-      file: 'dist/emi-umd.js',
+      name: 'temi',
+      file: 'dist/temi.min.js',
       format: 'umd'
     },
     plugins: [buble(), uglify()]

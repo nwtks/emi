@@ -1,4 +1,4 @@
-function emi() {
+function temi() {
   const listeners = Object.create(null)
   const emitter = {
     on(e, f) {
@@ -31,4 +31,4 @@ function emi() {
   return emitter
 }
 
-export default emi
+export default temi

@@ -1,6 +1,6 @@
 'use strict';
 
-function emi() {
+function temi() {
   var listeners = Object.create(null);
   var emitter = {
     on: function on(e, f) {
@@ -33,4 +33,4 @@ function emi() {
   return emitter
 }
 
-module.exports = emi;
+module.exports = temi;

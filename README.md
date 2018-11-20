@@ -1,2 +1,3 @@
-# emi
-simple emitter.
+# temi
+
+tiny emitter.
