@@ -1,16 +1,26 @@
 {
   "name": "temi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "tiny emitter.",
-  "author": "nwtks",
   "license": "MIT",
   "main": "dist/temi.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "author": "nwtks",
   "homepage": "https://github.com/nwtks/temi",
   "repository": {
     "type": "git",
     "url": "https://github.com/nwtks/temi"
   },
   "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
     "rollup": "^0.67.0",
     "rollup-plugin-buble": "^0.19.0",
     "rollup-plugin-uglify": "^6.0.0"
