@@ -14,7 +14,7 @@ const createEmitter = () => {
     emit: (e, a) => {
       listeners[e] &&
         listeners[e].forEach((f) => {
-          f(a);
+          f(a, emitter.emit);
         });
       return emitter;
     }

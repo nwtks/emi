@@ -16,7 +16,7 @@ var createEmitter = function () {
     emit: function (e, a) {
       listeners[e] &&
         listeners[e].forEach(function (f) {
-          f(a);
+          f(a, emitter.emit);
         });
       return emitter;
     }
