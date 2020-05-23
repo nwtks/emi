@@ -1,6 +1,6 @@
 {
-  "name": "temi",
-  "version": "0.1.3",
+  "name": "@nwtks/temi",
+  "version": "0.2.0",
   "description": "tiny emitter.",
   "license": "MIT",
   "main": "dist/temi.js",
@@ -9,7 +9,6 @@
     "dist"
   ],
   "author": "nwtks",
-  "homepage": "https://github.com/nwtks/temi",
   "repository": {
     "type": "git",
     "url": "https://github.com/nwtks/temi"
